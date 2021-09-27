@@ -10,7 +10,7 @@ namespace ClassTutorial
     {
         public string Name { get; set; }
 
-        private int _SAT;
+        private int _SAT =800;
         public int SAT {
             get { return _SAT; }
             set {
@@ -26,9 +26,9 @@ namespace ClassTutorial
             } 
         }
 
-        public void Print()
+        public string Print(int code)
         {
-            Console.WriteLine($"{this.Name}, {this.SAT}");
+            return ($"Code: {code} name: {this.Name}, SAT: {this.SAT}");
         }
     }
 }
